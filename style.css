@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #000;
+}
+
+.logo-div {
+    width: 250px;
+    padding: 25px;
+    position: initial;
+}
+
+.magazine {
+    width: 500px;
+    height: 500px;
+}
+
+span {
+    color: #fff;
+}
+
+.scroll-container {
+  max-height: 100vh;
+	overflow-y: scroll;
+	border: 1px solid gray;
+	scroll-snap-type: y mandatory;
+}
+
+li {
+    list-style-type: none;
+    scroll-snap-align: start;
+    text-align: center;
+    height: 100vh;
+}
+
+.magazine-5 {
+    background: #00c1b5;
+    position: relative;
+}
+
+.magazine-4 {
+    background: #ff651a;
+}
+
+.magazine-3 {
+    background: #ffbe00;
+}
+
+.magazine-2 {
+    background: #1d3fbb;
+}
+
+.magazine-1 {
+    background: #e30512;
+}
+
+.magazine-1-section-1 {
+    padding: 100px 0 0;
+    background: #e30512;
+}
+
+.magazine-1-section-2 {
+    padding: 25px 0;
+    background: #e30512;
+    position: inherit;
+}
+
+.mobile-none {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+
+    .magazine-5 {
+        padding: 350px 0;
+    }
+
+    .magazine-4 {
+        padding: 350px 0;
+    }
+
+    .magazine-3 {
+        padding: 350px 0;
+    }
+
+    .magazine-2 {
+        padding: 350px 0;
+    }
+
+    .magazine-1 {
+        padding: 350px 0;
+    }
+
+    .magazine-1-section-1 {
+        background: initial;
+        position: fixed;
+        left: 0;
+        /*top: 81vh;*/ top:70vh;
+        width: 375px;
+        line-height: 1.5;
+    }
+
+    .magazine-1-section-2 {
+        position: fixed;
+        top: 0;
+        right: 25px;
+        background:initial;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .issue-div {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 90vh;
+        right: 50px;
+    }
+
+    .logo-div {
+        position: fixed;
+        top: 0;
+        padding: 25px 25px 75px 25px;
+    }
+}
+
+@media (min-width: 1500px) {
+
+    .magazine-5 {
+        padding: 100px 0;
+    }
+
+    .magazine-4 {
+        padding: 100px 0;
+    }
+
+    .magazine-3 {
+        padding: 100px 0;
+    }
+
+    .magazine-2 {
+        padding: 100px 0;
+    }
+
+    .magazine-1 {
+        padding: 100px 0;
+    }
+
+    .magazine-1-section-1 {
+        top: 65vh;
+    }
+
+    .issue-div {
+        top: 86vh;
+    }
+
+}
+
+@media (max-height: 900px) {
+    .magazine-5 {
+        padding: 0;
+    }
+
+    .magazine-4 {
+        padding: 0;
+    }
+
+    .magazine-3 {
+        padding: 0;
+    }
+
+    .magazine-2 {
+        padding: 0;
+    }
+
+    .magazine-1 {
+        padding: 0;
+    }
+    .issue-div {
+        top: 85vh;
+    }
+    .magazine-1-section-1 {
+        top: 60vh;
+    }
+
+}
